@@ -5,24 +5,56 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
-      {/* ✅ Hero Section */}
-      <header className="flex flex-col items-center justify-center flex-grow px-6 py-12 text-center bg-gradient-to-br from-blue-50 to-blue-100">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-blue-700 mb-4">
-          Welcome to Web Banking
+  <div className="bg-blue-50 min-h-screen text-gray-800">
+    
+
+      {/* Hero Section */}
+      <section className="text-center py-20 px-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Empowering Your Financial Journey
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
-          Manage your finances securely and efficiently. Access your accounts,
-          transfer funds, pay bills, and more—all in one place.
+        <p className="text-lg max-w-2xl mx-auto mb-6">
+          Transforming Banking Experiences. Empower your finances with Viztrust,
+          where security meets simplicity for seamless online banking.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all">
-            Login
-          </button>
-          <button className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition-all">
-            Sign Up
+        <div className="flex justify-center gap-4 mb-6">
+          <button className="bg-black text-white px-6 py-3 rounded-lg">Install Now</button>
+          <button className="bg-white border border-gray-300 px-6 py-3 rounded-lg">
+            Learn More
           </button>
         </div>
-      </header>
+        <div className="flex justify-center gap-10 text-gray-700">
+          <div>
+            <p className="text-2xl font-bold">2M+</p>
+            <p>Registered Customers</p>
+          </div>
+          <div>
+            <p className="text-2xl font-bold">$10B+</p>
+            <p>Total Revenue</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="py-10 bg-white text-center">
+        <h2 className="text-xl font-semibold mb-4">Powering Progress Together</h2>
+        <p className="text-gray-600 mb-6">Banking Partnerships</p>
+        <div className="flex justify-center gap-8">
+          <div className="w-24 h-10 bg-gray-200 rounded"></div>
+          <div className="w-24 h-10 bg-gray-200 rounded"></div>
+          <div className="w-24 h-10 bg-gray-200 rounded"></div>
+        </div>
+      </section>
+
+      {/* CTA Access Account */}
+      <section className="text-center bg-gradient-to-r from-blue-100 to-blue-50 py-14">
+        <h2 className="text-2xl font-bold mb-4">Access Your Account Here</h2>
+        <p className="text-gray-600 mb-6">
+          Log in now for seamless control over your accounts with Viztrust.
+        </p>
+        <button className="bg-black text-white px-6 py-3 rounded-lg">Log In</button>
+      </section>
+    </div>
 
       {/* ✅ Features Section */}
       <section className="py-16 bg-white">

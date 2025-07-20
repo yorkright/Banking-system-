@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "$2a$10$hashedPasswordHere", 
+      "phone": "+91 9876543210"
+    },
+    {
+      "id": "u2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "$2a$10$hashedPasswordHere",
+      "phone": "+91 9123456789"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "a1",
+      "userId": "u1",
+      "accountNumber": "1002003001",
+      "type": "Savings",
+      "balance": 55000.75,
+      "currency": "INR"
+    },
+    {
+      "id": "a2",
+      "userId": "u1",
+      "accountNumber": "1002003002",
+      "type": "Checking",
+      "balance": 12000.50,
+      "currency": "INR"
+    },
+    {
+      "id": "a3",
+      "userId": "u2",
+      "accountNumber": "1002003003",
+      "type": "Savings",
+      "balance": 32000.00,
+      "currency": "INR"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "t1",
+      "accountId": "a1",
+      "type": "Debit",
+      "amount": 1500.00,
+      "description": "Electricity Bill Payment",
+      "date": "2025-07-15"
+    },
+    {
+      "id": "t2",
+      "accountId": "a1",
+      "type": "Credit",
+      "amount": 20000.00,
+      "description": "Salary Credit",
+      "date": "2025-07-10"
+    },
+    {
+      "id": "t3",
+      "accountId": "a3",
+      "type": "Debit",
+      "amount": 2500.00,
+      "description": "Shopping - Amazon",
+      "date": "2025-07-12"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c1",
+      "userId": "u1",
+      "cardNumber": "4111 1111 1111 1111",
+      "type": "Credit",
+      "expiry": "12/28",
+      "cvv": "***",
+      "limit": 100000.00,
+      "balance": 20000.00
+    },
+    {
+      "id": "c2",
+      "userId": "u2",
+      "cardNumber": "5500 0000 0000 0004",
+      "type": "Debit",
+      "expiry": "09/27",
+      "cvv": "***",
+      "limit": null,
+      "balance": 32000.00
+    }
+  ]
+}
